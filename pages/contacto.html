@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>ALFRED ACCESORIOS</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <picture>
+            <img class="nav__img" src="../img/logo.png" alt="">
+            </picture>
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarText">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </nav> 
+      </header>
+
+    <main>
+
+
+<div class="container py-4 formulario__contacto">
+
+
+  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+    <!-- input nombre -->
+    <div class="mb-3">
+      <label class="form-label" for="name">Nombre</label>
+      <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre" data-sb-validations="required" />
+      <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+    </div>
+
+    <!-- input correo -->
+    <div class="mb-3">
+      <label class="form-label" for="emailAddress">Email</label>
+      <input class="form-control" id="emailAddress" type="email" placeholder="Ingrese su Email" data-sb-validations="required, email" />
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+    </div>
+    
+    <!--input mensaje -->
+    <div class="mb-3">
+      <label class="form-label" for="message">Mensaje</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Escriba su mensaje" style="height: 10rem;" data-sb-validations="required"></textarea>
+      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+    </div>
+
+    <!-- mensaje exitoso -->
+    <div class="d-none" id="submitSuccessMessage">
+      <div class="text-center mb-3">Mensaje enviado exitosamente </div>
+    </div>
+
+    <!-- mensaje de error-->
+    <div class="d-none" id="submitErrorMessage">
+      <div class="text-center text-danger mb-3">Error al enviar el mensaje</div>
+    </div>
+
+    <!-- boton del formulario -->
+    <div class="d-grid">
+      <button class="btn btn-primary btn-m w-50 m-auto" id="submitButton" type="submit">Enviar</button>
+    </div>
+
+  </form>
+
+</div>
+    </main>
+<!-- START FOOTER -->
+<footer class="bg-dark p-3 mt-5">
+  <h5 class="text-center m-0 text-white">ALFRED ACCESORIOS</h5>
+  <div class="footer-copyright font-small text-center py-2">
+      <p>Accede a nuestras redes para obtener más información</p> 
+      <a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px;color:white"></i></a>
+      <a href="https://www.instagram.com/m0golico_/" target="_blank"><i class="fa fa-instagram" style="font-size:36px;color:white"></i></a>
+      <a href="https://www.facebook.com/marketplace/item/414498823952180/?hoisted=false&ref=search&referral_code=null&referral_story_type=post&tracking=browse_serp%3A4a57f16f-88b5-4efd-a92c-fd6147cc9d40" target="_blank"><i class="fa fa-facebook-square" style="font-size:36px;color:white"></i></a> 
+      <p class="copy">ⓒ 2022 Copyright: Mateo Maldonado </p>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

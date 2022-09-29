@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre": "Gargantillas",
+        "precio": 1000,
+        "stock": 10,
+        "descripcion": "Gargantillas en oro y plata",
+        "img": "../img/necklace.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Pulseras",
+        "precio": 700,
+        "stock": 10,
+        "descripcion": "Pulseras con diseños varios",
+        "img": "../img/pulseras.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Aros",
+        "precio": 380,
+        "stock": 10,
+        "descripcion": "Aros de tamaños y estilos variados",
+        "img": "../img/aros.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Anillos",
+        "precio": 500,
+        "stock": 10,
+        "descripcion": "Anillos casuales y elegantes",
+        "img": "../img/anillomanos.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Bandolera",
+        "precio": 2800,
+        "stock": 10,
+        "descripcion": "Bolso de cuero combinados",
+        "img": "../img/carteramoderna.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Cartera y funda de cel",
+        "precio": 5800,
+        "stock": 10,
+        "descripcion": "Jackie Smith",
+        "img": "../img/carterayfunda.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Pashminas y bufandas",
+        "precio": 1500,
+        "stock": 10,
+        "descripcion": "Pashminas de lana de alpaca",
+        "img": "../img/bufandacafe.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Reloj semiformal",
+        "precio": 1900,
+        "stock": 10,
+        "descripcion": "Reloj de cuero rosa",
+        "img": "../img/relojrosa.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Reloj formal",
+        "precio": 2500,
+        "stock": 10,
+        "descripcion": "Reloj de oro y plata con brillos",
+        "img": "../img/relojformal.jpg"
+    }
+    ]
