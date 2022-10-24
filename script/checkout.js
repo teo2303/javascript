@@ -23,7 +23,7 @@ listaObj.forEach(itemCarrito => {
                         <div class="col-8">
                         <div class="row"><b>$${itemCarrito.precio}</b></div>
                         <div class="row text-muted">${itemCarrito.nombre}</div>
-                        <div class="row">Cant: ${itemCarrito.cantidad}</div>
+                        <div class="row">Cantidad: ${itemCarrito.cantidad}</div>
                         <hr>` 
     tarjetaBody.appendChild(div);
 
@@ -121,7 +121,7 @@ numeroSeguridad.addEventListener('keydown', (e)=>{
 document.querySelector("#cancelarCompra").onclick = () => {
     Swal.fire({
         title: 'Quieres cancelar tu compra',
-        text: "No podras revertir esta accion!",
+        text: "No podrás revertir esta acción!",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -142,13 +142,11 @@ document.querySelector("#cancelarCompra").onclick = () => {
     })
 }
 
-
-
     document.querySelector("#realizarCompra").onclick = () => {
         Swal.fire({
             title: 'Quieres realizar tu compra',
-            text: "No podras revertir esta accion!",
-            imageUrl: 'https://media2.giphy.com/media/72EjRhsNqkzDiwE6TC/giphy.gif?cid=ecf05e477gw15j07un1tow4ria3a0gen9myqm1x1t6u4ptp4&rid=giphy.gif&ct=g',
+            text: "No podrás revertir esta acción!",
+            imageUrl: 'https://media.giphy.com/media/ea9dLwFle8DuxyhYrZ/giphy.gif',
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: '',
@@ -164,8 +162,7 @@ document.querySelector("#cancelarCompra").onclick = () => {
                 'success')
                 vaciarlistaDeCompra ()
                 setTimeout(()=>{
-                    location.href = 'https://tatixaj.github.io/Js-proyecto/blob/pages/carrito.html';
-                                    
+                    window.document.location = '../pages/carrito.html';             
                 }, 2500);          
             }
         })   

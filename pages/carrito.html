@@ -31,6 +31,10 @@
                             <a class="nav-link" href="../pages/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link active" id="itemActivo" aria-current="page" href="#">Carrito</a>
+                        </li>
+                        
+                        <li class="nav-item">
                             <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -63,45 +67,46 @@
                                 </div>
                                 <form>
                                     <span >Nombre completo del titular</span>
-                                    <input class="inputs" id="inputNombre" placeholder="Mateo Maldonado" disabled>
+                                    <input class="inputs" id="inputNombre" placeholder="Mateo Maldonado">
                                     <span >Número de Tarjeta</span>
-                                    <input class="inputs" type="text" id="inputNumeroTarjeta" maxlength="16" placeholder="0012 3456 7890 1234" disabled>
+                                    <input class="inputs" type="text" id="inputNumeroTarjeta" maxlength="16" placeholder="0012 3456 7890 1234">
                                     <div class="row">
                                         <div class="col-4"><span >Expiración</span>
                                             <select name="Mes" class="seleccionVencimiento"  id="mesSeleccionado" >
-                                                <option class="inputs"  disabled selected>Mes</option>
+                                                <option class="inputs">Mes</option>
                                                 <!-- <input class="inputs"  placeholder="Mes" disabled> -->
                                             </select>
                                             
                                         </div>
                                         <div class="col-4"><span >Expiración </span>
                                             <select name="Año" class="seleccionVencimiento"  id="añoSeleccionado" >
-                                                <option disabled selected>Año</option>
+                                                <option>Año</option>
                                             </select>
                                             <!-- <input class="inputs"  placeholder="Año" disabled> -->
                                         </div>
                                         <div class="col-4"><span >CVV:</span>
-                                            <input class="inputs" type="password" maxlength="3" id="cvv" disabled>
+                                            <input class="inputs" type="password" maxlength="3" id="cvv">
                                         </div>
                                     </div>
+                                    <div>
+                                        <p class="eleccion__pago">¿Cómo va a pagar?</p>
+                                    </div>
                                     <input type="checkbox" id="save_card" class="align-left" value="tarjeta">
-                                    <label class="pagoCompra" for="save_card">Pagar con Tarjeta</label>  
+                                    <label class="pagoCompra" for="save_card">Pagaré con Tarjeta</label>  
                                 </form>
                                 <div><input type="checkbox" id="save_card" class="align-left" value="efectivo">
-                                    <label class="pagoCompra">Pago Efectivo</label>  
+                                    <label class="pagoCompra">Pagaré en Efectivo</label>  
+                                    <p>Seleccionar Pago en efectivo para proyecto</p>
                                 </div>
-                                <div>
-                                    <p class="eleccion__pago">¿Cómo va a pagar?</p>
-                                </div>
+                                
                             </div>                        
                         </div>
                         <div class="col-md-5">
                             <div class="right border">
                                 <div  id="tarjeta-body"class="header">Orden de compra</div>
-                                
-                                <div><p class="precioProducto" style="font-weight:bolder; color: blue; font-size: large;">Precio Total : $<span id="precio-final"></span></p></div>
+                                <div><p class="precioProducto" style="font-weight:bolder; color: #e4a03a; font-size: large;">Precio Total : $<span id="precio-final"></span></p></div>
                                 <div class="row lower">
-                                <button id="cancelarCompra" class="btn__cancelar">Cancelar Comprar</button>
+                                <button id="cancelarCompra" class="btn__cancelar">Cancelar Compra</button>
                                 <button id="realizarCompra" class="btn__final" >Comprar</button>
                             </div>
                         </div>
@@ -118,11 +123,10 @@
     <footer class="bg-dark p-3 mt-5">
         <h5 class="text-center m-0 text-white">ALFRED ACCESORIOS</h5>
         <div class="footer-copyright font-small text-center py-2">
-            <p>Accede a nuestras redes para obtener más información</p> 
+            <p>Aqui nuestras redes sociales</p> 
             <a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px;color:white"></i></a>
-            <a href="https://www.instagram.com/m0golico_/" target="_blank"><i class="fa fa-instagram" style="font-size:36px;color:white"></i></a>
+            <a href="https://www.instagram.com/alfred_accesorios/" target="_blank"><i class="fa fa-instagram" style="font-size:36px;color:white"></i></a>
             <a href="https://www.facebook.com/marketplace/item/414498823952180/?hoisted=false&ref=search&referral_code=null&referral_story_type=post&tracking=browse_serp%3A4a57f16f-88b5-4efd-a92c-fd6147cc9d40" target="_blank"><i class="fa fa-facebook-square" style="font-size:36px;color:white"></i></a> 
-            <p class="copy">ⓒ 2022 Copyright: Mateo Maldonado </p>
         </div>
     </footer>
  <!-- END FOOTER -->

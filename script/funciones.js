@@ -68,7 +68,7 @@ function mostrarProductos (productos) {
             text: "Producto agregado",
             className: "info",
             style: {
-            background: "linear-gradient(to right, #00b09b, #96c93d)",
+            background: "linear-gradient(to right, #eeaeca, #94bbe9)",
             border: "10px",
             }
         }).showToast(btnComprar);
